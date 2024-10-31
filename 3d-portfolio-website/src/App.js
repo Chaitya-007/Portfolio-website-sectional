@@ -1,11 +1,14 @@
 import styled, { ThemeProvider } from "styled-components";
 import { darkTheme } from "./utils/Themes";
 import Navbar from "./components/Navbar";
+import { BrowserRouter, Router, Route } from "react-router-dom";
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
