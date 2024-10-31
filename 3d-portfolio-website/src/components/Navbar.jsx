@@ -80,7 +80,7 @@ const GithubButton = styled.a`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavLogo to="\">Chaitya</NavLogo>
+      <NavLogo to="\">Chaitya Portfolio</NavLogo>
       <NavItems>
         <NavLink href="#About"> About</NavLink>
         <NavLink href="#Skills">Skills</NavLink>
