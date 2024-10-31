@@ -13,15 +13,19 @@ const NavbarContainer = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
+  color: white;
 `;
-const NavLogo = styled(LinkR)``;
+const NavLogo = styled(LinkR)`
+  padding: 0 6px;
+  text-decoration: none;
+  color: inherit;
+`;
 
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavLogo to="\">
-        <a style={{ color: "white" }}>GFG</a>
-      </NavLogo>
+      Chaitya
+      <NavLogo to="\"></NavLogo>
     </NavbarContainer>
   );
 };
