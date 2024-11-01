@@ -1,7 +1,6 @@
 import React from "react";
-import styled from "styled-components";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
+import styled from "styled-components";
 
 const Top = styled.div`
   width: 100%;
@@ -13,12 +12,10 @@ const Image = styled.img`
   height: 50px;
   border-radius: 10px;
   margin-top: 4px;
-
   @media only screen and (max-width: 768px) {
     height: 40px;
   }
 `;
-
 const Body = styled.div`
   width: 100%;
   display: flex;
@@ -29,7 +26,7 @@ const Role = styled.div`
   font-weight: 600px;
   color: ${({ theme }) => theme.text_primary + 99};
   @media only screen and (max-width: 768px) {
-    height: 14px;
+    font-size: 14px;
   }
 `;
 const Company = styled.div`
@@ -44,6 +41,7 @@ const Date = styled.div`
   font-size: 12px;
   font-weight: 400px;
   color: ${({ theme }) => theme.text_secondary + 80};
+
   @media only screen and (max-width: 768px) {
     font-size: 10px;
   }
@@ -53,9 +51,37 @@ const Description = styled.div`
   width: 100%;
   font-size: 15px;
   font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+  margin-bottom: 10px;
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
-const Skills = styled.div``;
-const Span = styled.div``;
+const Skills = styled.div`
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  margin-top: -10px;
+`;
+const Span = styled.div`
+  display: -webkit-box;
+  max-width: 100%;
+`;
+
+const Skill = styled.div`
+  font-size: 15px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.text_primary + 99};
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+`;
+
+const ItemWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+`;
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -64,7 +90,7 @@ const ExperienceCard = ({ experience }) => {
         <img
           width="100%"
           height="100%"
-          alt={experience?.school}
+          alt={experience?.company}
           style={{ borderRadius: "50%", objectFit: "cover" }}
           src={experience?.img}
         />
@@ -80,29 +106,35 @@ const ExperienceCard = ({ experience }) => {
         border: "1px solid rgba(255, 255, 255, 0.125)",
         borderRadius: "6px",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  rgba(255, 255, 255, 0.3)" }}
+      contentArrowStyle={{
+        borderRight: "7px solid  rgba(255, 255, 255, 0.3)",
+      }}
       date={experience?.date}
     >
       <Top>
-        <Image src={experience.img} alt={experience.school} />
+        <Image src={experience?.img} />
         <Body>
           <Role>{experience?.role}</Role>
           <Company>{experience?.company}</Company>
           <Date>{experience?.date}</Date>
         </Body>
-
-        <Description>
-          {experience?.desc && <Span>{experience.desc}</Span>}
-          {experience?.skills && (
-            <>
-              <br />
-              <Skills>
-                <b>Skills</b>
-              </Skills>
-            </>
-          )}
-        </Description>
       </Top>
+      <Description>
+        {experience?.desc && <Span>{experience.desc}</Span>}
+        {experience?.skills && (
+          <>
+            <br />
+            <Skills>
+              <b>Skills</b>
+              <ItemWrapper>
+                {experience?.skills?.map((skill, index) => (
+                  <Skill>• {skill}</Skill>
+                ))}
+              </ItemWrapper>
+            </Skills>
+          </>
+        )}
+      </Description>
     </VerticalTimelineElement>
   );
 };
