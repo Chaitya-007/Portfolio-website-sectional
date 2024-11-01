@@ -4,6 +4,7 @@ import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../../images/HeroImg.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
+import { Tilt } from "react-tilt";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -249,7 +250,9 @@ const Hero = () => {
             </ResumeButton>
           </HeroLeftContainer>
           <HeroRightContainer>
-            <Img src={HeroImg} alt="Chaitanya Asole" />
+            <Tilt>
+              <Img src={HeroImg} alt="Chaitanya Asole" />
+            </Tilt>
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
