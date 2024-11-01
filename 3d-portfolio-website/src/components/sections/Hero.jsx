@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Bio } from "../../data/constants";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -19,18 +20,65 @@ const HeroContainer = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
-const HeroInnerContainer = styled.div``;
+const HeroInnerContainer = styled.div`
+  background-color: red;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
 
-const HeroLeftContainer = styled.div``;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
 
-const HeroRightContainer = styled.div``;
+const HeroLeftContainer = styled.div`
+  background-color: blue;
+  width: 100%;
+  order: 1;
+
+  @media (max-width: 960px) {
+    order: 2;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const HeroRightContainer = styled.div`
+  background-color: orange;
+  width: 100%;
+  order: 2;
+
+  @media (max-width: 960px) {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 640px) {
+    margin-bottom: 30px;
+  }
+`;
+
+const Title = styled.div``;
 
 const Hero = () => {
   return (
     <div id="about">
       <HeroContainer>
         <HeroInnerContainer>
-          <HeroLeftContainer>Left</HeroLeftContainer>
+          <HeroLeftContainer>
+            <Title>
+              Hi, I'm <br /> {Bio.name}
+            </Title>
+          </HeroLeftContainer>
           <HeroRightContainer>Right</HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>
