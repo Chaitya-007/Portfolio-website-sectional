@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import HeroImg from "../../images/HeroImg.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -227,34 +228,36 @@ const Hero = () => {
         <HeroBg>
           <HeroBgAnimation />
         </HeroBg>
-        <HeroInnerContainer>
-          <HeroLeftContainer>
-            <Title>
-              Hi, I'm <br /> {Bio.name}
-            </Title>
-            <TextLoop>
-              I am a
-              <Span>
-                <Typewriter
-                  options={{
-                    strings: Bio.roles,
-                    autoStart: true,
-                    loop: true,
-                  }}
-                />
-              </Span>
-            </TextLoop>
-            <SubTitle>{Bio.description}</SubTitle>
-            <ResumeButton href={Bio.resume} target="_blank">
-              Chek Resume
-            </ResumeButton>
-          </HeroLeftContainer>
-          <HeroRightContainer>
-            <Tilt>
-              <Img src={HeroImg} alt="Chaitanya Asole" />
-            </Tilt>
-          </HeroRightContainer>
-        </HeroInnerContainer>
+        <motion.div>
+          <HeroInnerContainer>
+            <HeroLeftContainer>
+              <Title>
+                Hi, I'm <br /> {Bio.name}
+              </Title>
+              <TextLoop>
+                I am a
+                <Span>
+                  <Typewriter
+                    options={{
+                      strings: Bio.roles,
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                </Span>
+              </TextLoop>
+              <SubTitle>{Bio.description}</SubTitle>
+              <ResumeButton href={Bio.resume} target="_blank">
+                Chek Resume
+              </ResumeButton>
+            </HeroLeftContainer>
+            <HeroRightContainer>
+              <Tilt>
+                <Img src={HeroImg} alt="Chaitanya Asole" />
+              </Tilt>
+            </HeroRightContainer>
+          </HeroInnerContainer>
+        </motion.div>
       </HeroContainer>
     </div>
   );
