@@ -6,6 +6,7 @@ import HeroImg from "../../images/HeroImg.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { headContainerAnimation, headTextAnimation } from "../../utils/motion";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -228,24 +229,26 @@ const Hero = () => {
         <HeroBg>
           <HeroBgAnimation />
         </HeroBg>
-        <motion.div>
+        <motion.div {...headContainerAnimation}>
           <HeroInnerContainer>
             <HeroLeftContainer>
-              <Title>
-                Hi, I'm <br /> {Bio.name}
-              </Title>
-              <TextLoop>
-                I am a
-                <Span>
-                  <Typewriter
-                    options={{
-                      strings: Bio.roles,
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
-                </Span>
-              </TextLoop>
+              <motion.div {...headTextAnimation}>
+                <Title>
+                  Hi, I'm <br /> {Bio.name}
+                </Title>
+                <TextLoop>
+                  I am a
+                  <Span>
+                    <Typewriter
+                      options={{
+                        strings: Bio.roles,
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </Span>
+                </TextLoop>
+              </motion.div>
               <SubTitle>{Bio.description}</SubTitle>
               <ResumeButton href={Bio.resume} target="_blank">
                 Chek Resume
