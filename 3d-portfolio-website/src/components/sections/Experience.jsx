@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import ExperienceCard from "../cards/ExperienceCard";
 
 import { experiences } from "../../data/constants";
 
