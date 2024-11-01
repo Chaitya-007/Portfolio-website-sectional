@@ -83,16 +83,16 @@ const ItemWrapper = styled.div`
   gap: 8px;
 `;
 
-const EducationCard = ({ experience }) => {
+const EducationCard = ({ education }) => {
   return (
     <VerticalTimelineElement
       icon={
         <img
           width="100%"
           height="100%"
-          alt={experience?.company}
+          alt={education.company}
           style={{ borderRadius: "50%", objectFit: "cover" }}
-          src={experience?.img}
+          src={education?.img}
         />
       }
       contentStyle={{
@@ -109,31 +109,18 @@ const EducationCard = ({ experience }) => {
       contentArrowStyle={{
         borderRight: "7px solid  rgba(255, 255, 255, 0.3)",
       }}
-      date={experience?.date}
+      date={education?.date}
     >
       <Top>
-        <Image src={experience?.img} />
+        <Image src={education?.img} />
         <Body>
-          <Role>{experience?.role}</Role>
-          <Company>{experience?.company}</Company>
-          <Date>{experience?.date}</Date>
+          <Role>{education?.role}</Role>
+          <Company>{education?.company}</Company>
+          <Date>{education?.date}</Date>
         </Body>
       </Top>
       <Description>
-        {experience?.desc && <Span>{experience.desc}</Span>}
-        {experience?.skills && (
-          <>
-            <br />
-            <Skills>
-              <b>Skills</b>
-              <ItemWrapper>
-                {experience?.skills?.map((skill, index) => (
-                  <Skill>• {skill}</Skill>
-                ))}
-              </ItemWrapper>
-            </Skills>
-          </>
-        )}
+        {education?.desc && <Span>{education.desc}</Span>}
       </Description>
     </VerticalTimelineElement>
   );
