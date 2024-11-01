@@ -49,7 +49,11 @@ const Date = styled.div`
   }
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+`;
 const Skills = styled.div``;
 const Span = styled.div``;
 
@@ -60,9 +64,9 @@ const ExperienceCard = ({ experience }) => {
         <img
           width="100%"
           height="100%"
-          alt={experience.school}
+          alt={experience?.school}
           style={{ borderRadius: "50%", objectFit: "cover" }}
-          src={experience.img}
+          src={experience?.img}
         />
       }
       contentStyle={{
@@ -82,9 +86,9 @@ const ExperienceCard = ({ experience }) => {
       <Top>
         <Image src={experience.img} alt={experience.school} />
         <Body>
-          <Role>{experience.role}</Role>
-          <Company>{experience.company}</Company>
-          <Date>{experience.date}</Date>
+          <Role>{experience?.role}</Role>
+          <Company>{experience?.company}</Company>
+          <Date>{experience?.date}</Date>
         </Body>
 
         <Description>
