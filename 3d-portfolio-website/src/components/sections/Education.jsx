@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import ExperienceCard from "../cards/ExperienceCard";
+import EducationCard from "../cards/EducationCard";
 
-import { experiences } from "../../data/constants";
+import { education } from "../../data/constants";
 
 const Container = styled.div`
   // background-color: red;
@@ -56,25 +56,22 @@ const Desc = styled.div`
   }
 `;
 
-const Experience = () => {
+const Education = () => {
   return (
     <Container id="Education">
       <Wrapper>
-        <Title>Experience</Title>
+        <Title>Education</Title>
         <Desc
           style={{
             marginBottom: "40px",
           }}
         >
-          My working experience as a software engineer and working copanies and
-          projects.
+          My education has been a journer of self-discovery and my educational
+          details are as follows:
         </Desc>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
+          {education.map((item, index) => (
+            <EducationCard key={`education-${index}`} education={item} />
           ))}
         </VerticalTimeline>
       </Wrapper>
@@ -82,4 +79,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;
