@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
+import Typewriter from "typewriter-effect";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -84,6 +85,31 @@ const Title = styled.div`
   }
 `;
 
+const TextLoop = styled.div`
+  background-color: green;
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  gap: 12px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 22px;
+    line-height: 48px;
+    margin-bottom: 16px;
+  }
+`;
+
+const Span = styled.div`
+  cursor: pointer;
+  color: ${({ theme }) => theme.primary};
+`;
+
 const Hero = () => {
   return (
     <div id="about">
@@ -93,6 +119,18 @@ const Hero = () => {
             <Title>
               Hi, I'm <br /> {Bio.name}
             </Title>
+            <TextLoop>
+              I am a
+              <Span>
+                <Typewriter
+                  options={{
+                    strings: Bio.roles,
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </Span>
+            </TextLoop>
           </HeroLeftContainer>
           <HeroRightContainer>Right</HeroRightContainer>
         </HeroInnerContainer>
