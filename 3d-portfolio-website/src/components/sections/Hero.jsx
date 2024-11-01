@@ -8,6 +8,7 @@ import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { headContainerAnimation, headTextAnimation } from "../../utils/motion";
 import { headContentAnimation } from "./../../utils/motion";
+import { StarCanvas } from "../canvas/Stars";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -228,6 +229,7 @@ const Hero = () => {
     <div id="about">
       <HeroContainer>
         <HeroBg>
+          <StarCanvas />
           <HeroBgAnimation />
         </HeroBg>
         <motion.div {...headContainerAnimation}>
