@@ -44,6 +44,7 @@ const HeroLeftContainer = styled.div`
     order: 2;
     margin-bottom: 30px;
     display: flex;
+    gap: 6px;
     flex-direction: column;
     align-items: center;
   }
@@ -119,6 +120,15 @@ const SubTitle = styled.div`
   display: flex;
   gap: 12px;
   margin-bottom: 42px;
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
 `;
 
 const Hero = () => {
