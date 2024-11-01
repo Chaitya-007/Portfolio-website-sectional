@@ -21,7 +21,7 @@ const Body = styled.div`
   display: flex;
   flex-direction: column;
 `;
-const Role = styled.div`
+const School = styled.div`
   font-size: 18px;
   font-weight: 600px;
   color: ${({ theme }) => theme.text_primary + 99};
@@ -29,7 +29,7 @@ const Role = styled.div`
     font-size: 14px;
   }
 `;
-const Company = styled.div`
+const Degree = styled.div`
   font-size: 14px;
   font-weight: 500px;
   color: ${({ theme }) => theme.text_secondary + 99};
@@ -57,30 +57,19 @@ const Description = styled.div`
     font-size: 12px;
   }
 `;
-const Skills = styled.div`
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  margin-top: -10px;
-`;
+
 const Span = styled.div`
   display: -webkit-box;
   max-width: 100%;
 `;
 
-const Skill = styled.div`
-  font-size: 15px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 99};
+const Grade = styled.div`
+  font-size: 14px;
+  font-weight: 500;
+  color: ${({ theme }) => theme.text_secondary + 99};
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
-`;
-
-const ItemWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
 `;
 
 const EducationCard = ({ education }) => {
@@ -114,11 +103,15 @@ const EducationCard = ({ education }) => {
       <Top>
         <Image src={education?.img} />
         <Body>
-          <Role>{education?.role}</Role>
-          <Company>{education?.company}</Company>
+          <School>{education?.school}</School>
+          <Degree>{education?.degree}</Degree>
           <Date>{education?.date}</Date>
         </Body>
       </Top>
+      <Grade>
+        <b>Grade : </b>
+        {education.grade}
+      </Grade>
       <Description>
         {education?.desc && <Span>{education.desc}</Span>}
       </Description>
