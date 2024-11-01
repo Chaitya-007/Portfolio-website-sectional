@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { skills } from "../../data/constants";
+import { Tilt } from "react-tilt";
 
 const Container = styled.div`
   background-color: red;
@@ -129,23 +130,29 @@ const Skills = () => {
     <Container id="Skills">
       <Wrapper>
         <Title>Skills</Title>
-        <Desc>
+        <Desc
+          style={{
+            marginBottom: "40px",
+          }}
+        >
           Here are some of my skills on which I have bee working past 3 years.
         </Desc>
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Skill key={`skill-${index}`}>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item, index_x) => (
-                  <SkillItem src={`skill-x-${index_x}`}>
-                    <SkillImage src={item.image} />
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+            <Tilt>
+              <Skill key={`skill-${index}`}>
+                <SkillTitle>{skill.title}</SkillTitle>
+                <SkillList>
+                  {skill.skills.map((item, index_x) => (
+                    <SkillItem src={`skill-x-${index_x}`}>
+                      <SkillImage src={item.image} />
+                      {item.name}
+                    </SkillItem>
+                  ))}
+                </SkillList>
+              </Skill>
+            </Tilt>
           ))}
         </SkillsContainer>
       </Wrapper>
