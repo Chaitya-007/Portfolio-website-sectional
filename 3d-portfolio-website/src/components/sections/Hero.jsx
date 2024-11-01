@@ -106,8 +106,19 @@ const TextLoop = styled.div`
 `;
 
 const Span = styled.div`
+  background-color: yellow;
   cursor: pointer;
   color: ${({ theme }) => theme.primary};
+`;
+
+const SubTitle = styled.div`
+  background-color: purple;
+  color: ${({ theme }) => theme.text_primary + 95};
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 42px;
 `;
 
 const Hero = () => {
@@ -131,6 +142,7 @@ const Hero = () => {
                 />
               </Span>
             </TextLoop>
+            <SubTitle>{Bio.description}</SubTitle>
           </HeroLeftContainer>
           <HeroRightContainer>Right</HeroRightContainer>
         </HeroInnerContainer>
