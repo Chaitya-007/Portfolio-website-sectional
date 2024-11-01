@@ -4,7 +4,7 @@ import { skills } from "../../data/constants";
 import { Tilt } from "react-tilt";
 
 const Container = styled.div`
-  background-color: red;
+  // background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  background-color: blue;
+  // background-color: blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +54,7 @@ const Desc = styled.div`
 `;
 
 const SkillsContainer = styled.div`
-  background: red;
+  // background: red;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,7 @@ const SkillsContainer = styled.div`
 `;
 
 const Skill = styled.div`
-  background: green;
+  // background: green;
   width: 100%;
   max-width: 500px;
   background-color: rgba(17, 25, 40, 0.83);
