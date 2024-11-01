@@ -109,6 +109,14 @@ const SkillItem = styled.div`
   align-items: center;
   justify-content: center;
   gap: 8px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+  @media (max-width: 500px) {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 `;
 
 const SkillImage = styled.img`
@@ -127,11 +135,11 @@ const Skills = () => {
 
         <SkillsContainer>
           {skills.map((skill, index) => (
-            <Skill>
+            <Skill key={`skill-${index}`}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
                 {skill.skills.map((item, index_x) => (
-                  <SkillItem>
+                  <SkillItem src={`skill-x-${index_x}`}>
                     <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>
