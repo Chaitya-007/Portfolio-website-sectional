@@ -12,9 +12,9 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1arfWZNfA1yGjQBQBFp9jygv4NCFxkERx/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/chaitanya-asole/",
-  twitter: "https://twitter.com/RishavChanda",
-  insta: "https://www.instagram.com/rishav_chanda/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
+  twitter: "",
+  insta: "",
+  facebook: "",
 };
 
 export const skills = [
