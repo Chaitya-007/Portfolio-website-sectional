@@ -60,6 +60,8 @@ import {
   adobexd,
   pccoe,
   kv,
+  powerbi,
+  bookstore,
 } from "../assets";
 
 export const Bio = {
@@ -434,44 +436,23 @@ export const projects = [
     date: "Jan 2024 - Dec 2023",
     description:
       "This project features a comprehensive analysis and prediction system for bike sales prices, organized across three pages. The second page focuses on model prediction, allowing users to input various parameters to generate an estimated price. The third page offers a dynamic dashboard, which updates based on selected dropdown options, enabling in-depth analysis of trends and patterns in bike sales..",
-    image:
-      "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
-    tags: [
-      "React Js",
-      "PostgressSQL",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "React Flow",
-    ],
+    image: powerbi,
+    tags: ["React Js", "Tailwind CSS", "Django", "Python", "Power BI", "Flask"],
     category: "web app",
-    github: "https://github.com/rishavchanda/DecisionHub",
-    webapp: "https://decisionhub.netlify.app/",
+    github: "https://github.com/Chaitya-007/PowerBiProject",
+    webapp: "https://power-bi-project-eta.vercel.app/",
   },
   {
     id: 9,
-    title: "Trackify",
+    title: "Book Store Mern Application",
     date: "Jun 2023 - Jul 2023",
     description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
+      "This Bookstore application, built using the MERN stack (MongoDB, Express.js, React, and Node.js), offers a seamless interface to manage book records. Users can perform CRUD operations—create, read, update, and delete book entries—directly within the app. The data for each book, including title, author, and publish year, is securely stored in a MongoDB database, ensuring reliable data management. The application features a responsive UI that allows for smooth navigation, making it easy to browse and edit the bookstore’s collection. This project showcases full-stack development skills, integrating a NoSQL database, backend API, and interactive front end for a cohesive user experience.",
+    image: bookstore,
+    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Tailwind CSS"],
     category: "web app",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify-management.netlify.app/",
+    github: "https://github.com/Chaitya-007/MERN_STACK_BOOK_APPLICATION",
+    webapp: "https://mern-stack-book-application.onrender.com/",
   },
   {
     id: 0,
