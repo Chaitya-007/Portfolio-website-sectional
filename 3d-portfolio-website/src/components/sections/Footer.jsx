@@ -99,7 +99,7 @@ const Footer = () => {
           <SocialMediaIcon href={Bio.twitter} target="display">
             <Twitter />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon href={Bio.linkedin} target="_blank">
             <LinkedIn />
           </SocialMediaIcon>
           <SocialMediaIcon href={Bio.insta} target="display">

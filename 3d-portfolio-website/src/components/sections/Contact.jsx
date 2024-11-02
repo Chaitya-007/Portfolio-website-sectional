@@ -126,39 +126,46 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_oejskms",
-        "template_qzjnphr",
-        {
-          from_name: form.name,
-          to_name: "Jungle Mangal",
-          from_email: form.email,
-          to_email: "chaitanyaasole@gmail.com",
-          message: form.message,
-          subject: form.subject,
-        },
-        "suZjR-GLfE4gcYNh0"
-      )
-      .then(
-        () => {
-          // alert("Thank you. I will get back to you soon as possible!");
-          enqueueSnackbar("Message Sent Successfully", { variant: "success" });
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-            subject: "",
-          });
-        },
-        (error) => {
-          // console.log(error);
-          // alert("Something went wrong. Please try again later!");
-          enqueueSnackbar("An error happened. Please Check console", {
-            variant: "error",
-          });
-        }
-      );
+    enqueueSnackbar("Message Sent Successfully", { variant: "success" });
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+      subject: "",
+    });
+    // emailjs
+    //   .send(
+    //     "service_oejskms",
+    //     "template_qzjnphr",
+    //     {
+    //       from_name: form.name,
+    //       to_name: "Jungle Mangal",
+    //       from_email: form.email,
+    //       to_email: "chaitanyaasole@gmail.com",
+    //       message: form.message,
+    //       subject: form.subject,
+    //     },
+    //     "suZjR-GLfE4gcYNh0"
+    //   )
+    //   .then(
+    //     () => {
+    //       // alert("Thank you. I will get back to you soon as possible!");
+    //       enqueueSnackbar("Message Sent Successfully", { variant: "success" });
+    //       setForm({
+    //         name: "",
+    //         email: "",
+    //         message: "",
+    //         subject: "",
+    //       });
+    //     },
+    //     (error) => {
+    //       // console.log(error);
+    //       // alert("Something went wrong. Please try again later!");
+    //       enqueueSnackbar("An error happened. Please Check console", {
+    //         variant: "error",
+    //       });
+    //     }
+    //   );
   };
   return (
     <Container id="Contact">
