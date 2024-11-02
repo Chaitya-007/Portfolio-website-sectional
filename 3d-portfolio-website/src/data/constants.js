@@ -59,6 +59,7 @@ import {
   postman,
   adobexd,
   pccoe,
+  kv,
 } from "../assets";
 
 export const Bio = {
@@ -408,21 +409,21 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2019 - Apr 2025",
-    grade: "88.2%",
-    desc: "I completed my class 12 high school education at Methodist School, Dankuni, where I studied Science with Computer Science.",
-    degree: "ISC(XII), Science with Computer",
+    img: kv,
+    school: "Kendriya Vidyalaya Ganeshkhind, Pune",
+    date: "Apr 2020 - June 2021",
+    grade: "96.2%(School Topper)",
+    desc: "I completed my Class 12 from Kendriya Vidyalaya Ganeshkhind, Aundh, Pune, under the CBSE board with a 96.2% score, earning the position of school topper in the Science stream. My studies focused on Physics, Chemistry, Mathematics, and Computer Science, which nurtured my interest in analytical thinking and problem-solving.",
+    degree: "CBSE(XII), Science with Computer",
   },
   {
     id: 2,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
-    school: "Methodist School, Dankuni",
-    date: "Apr 2017 - Apr 2019",
-    grade: "92.3%",
-    desc: "I completed my class 10 education at Methodist School, Dankuni, where I studied Science with Computer Application.",
-    degree: "ICSC(X), Science with Computer",
+    img: kv,
+    school: "Kendriya Vidyalaya Ganeshkhind, Pune",
+    date: "Apr 2018 - June 2019",
+    grade: "91.6%",
+    desc: "I completed my Class 10 from Kendriya Vidyalaya Ganeshkhind, Aundh, Pune, under the CBSE board, achieving 91.6%. This experience laid a strong foundation in core subjects and helped me develop a disciplined and focused approach to academics.",
+    degree: "CBSE(X), Science with Computer",
   },
 ];
 
