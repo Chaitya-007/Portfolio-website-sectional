@@ -1,6 +1,4 @@
-import React from "react";
-import { useState } from "react";
-import "react-vertical-timeline-component/style.min.css";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { projects } from "../../data/constants";
 import ProjectCard from "../cards/ProjectCard";
@@ -56,13 +54,12 @@ const ToggleButtonGroup = styled.div`
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
   border-radius: 12px;
-  font-weight 500;
-  margin: 22px 0;
-  @media (max-width: 768px){
+font-weight 500;
+margin: 22px 0;
+@media (max-width: 768px){
     font-size: 12px;
-  }
+}
 `;
-
 const ToggleButton = styled.div`
   padding: 8px 18px;
   border-radius: 6px;
@@ -77,8 +74,8 @@ const ToggleButton = styled.div`
   ${({ active, theme }) =>
     active &&
     `
-    background:  ${theme.primary + 20};
-    `}
+  background:  ${theme.primary + 20};
+  `}
 `;
 const Divider = styled.div`
   width: 1.5px;
@@ -95,7 +92,6 @@ const CardContainer = styled.div`
 
 const Projects = () => {
   const [toggle, setToggle] = useState("all");
-
   return (
     <Container id="Projects">
       <Wrapper>
@@ -105,9 +101,10 @@ const Projects = () => {
             marginBottom: "40px",
           }}
         >
-          I have worked on a wide range of projects. From web app. Here are some
-          of my projects.
+          I have worked on a wide range of projects. From web apps to android
+          apps. Here are some of my projects.
         </Desc>
+
         <ToggleButtonGroup>
           <ToggleButton
             active={toggle === "all"}
@@ -140,8 +137,11 @@ const Projects = () => {
 
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
-              <ProjectCard project={project}></ProjectCard>
+            projects.map((project) => <ProjectCard project={project} />)}
+          {projects
+            .filter((item) => item.category === toggle)
+            .map((project) => (
+              <ProjectCard project={project} />
             ))}
         </CardContainer>
       </Wrapper>
