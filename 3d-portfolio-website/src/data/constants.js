@@ -430,10 +430,10 @@ export const education = [
 export const projects = [
   {
     id: 11,
-    title: "DecisionHub",
+    title: "Predictive Analysis and Dynamic Dashboard for Bike Sales Pricing",
     date: "Jan 2024 - Dec 2023",
     description:
-      "A Rule Builder application “Decision Hub” that empowers Business Analysts to create, save, and visualize decision strategies. Provide a no-code rule writing experience and visual representation to test these rules in real-time and observe the calculations at each step.",
+      "This project features a comprehensive analysis and prediction system for bike sales prices, organized across three pages. The second page focuses on model prediction, allowing users to input various parameters to generate an estimated price. The third page offers a dynamic dashboard, which updates based on selected dropdown options, enabling in-depth analysis of trends and patterns in bike sales..",
     image:
       "https://github.com/rishavchanda/DecisionHub/raw/master/assets/testRule.jpg",
     tags: [
