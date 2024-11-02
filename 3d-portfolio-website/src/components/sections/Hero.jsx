@@ -95,7 +95,7 @@ const Title = styled.div`
 `;
 
 const TextLoop = styled.div`
-  background-color: green;
+  // background-color: green;
   font-weight: 600;
   font-size: 32px;
   display: flex;
