@@ -64,6 +64,7 @@ import tesla from "./company/tesla.png";
 
 import powerbi from "./projects/powerbi.png";
 import bookstore from "./projects/bookstore.png";
+import fuelpriceprediction from "./projects/fuelpriceprediction.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -135,4 +136,5 @@ export {
   kv,
   powerbi,
   bookstore,
+  fuelpriceprediction,
 };
