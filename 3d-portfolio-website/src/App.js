@@ -46,7 +46,7 @@ function App() {
             <Hero />
             <Wrapper>
               <Skills />
-              <Experience />
+              {/* <Experience /> */}
             </Wrapper>
             <Projects />
             <Wrapper>

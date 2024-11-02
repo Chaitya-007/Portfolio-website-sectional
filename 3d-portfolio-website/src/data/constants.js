@@ -63,11 +63,12 @@ import {
   powerbi,
   bookstore,
   fuelpriceprediction,
+  policefeedback,
 } from "../assets";
 
 export const Bio = {
   name: "Chaitanya Asole",
-  roles: ["Full Stack Developer", "Competitive Programmar", "App Developer"],
+  roles: ["Full Stack Developer", "Competitive Programmer", "App Developer"],
   description:
     "I am a highly motivated and adaptable professional, driven by a strong curiosity to explore new ideas and find creative solutions to challenges. With a positive mindset and a collaborative spirit, I am eager to contribute to a team and embrace opportunities for mutual learning and growth.",
   github: "https://github.com/Chaitya-007",
@@ -570,19 +571,27 @@ export const projects = [
   //   github: "https://github.com/rishavchanda/Quiz-Earn",
   //   webapp: "https://github.com/rishavchanda/Quiz-Earn",
   // },
-  // {
-  //   id: 8,
-  //   title: "Face Recognition",
-  //   date: "Jan 2021",
-  //   description:
-  //     "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-  //   image:
-  //     "https://dontrepeatyourself.org/media/face-recognition-with-python-dlib-and-deep-learning_cezKZBj.png",
-  //   tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-  //   category: "machine learning",
-  //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  // },
+  {
+    id: 8,
+    title: "Police Feedback System",
+    date: "Dec 2022 - Jan 2023",
+    description:
+      "We have developed a web application that allows citizens to provide feedback on the police services they receive. The application is designed to be user-friendly and easy to navigate, with a simple interface that allows users to submit feedback quickly and easily. The application also includes a dashboard that allows police departments to view and analyze the feedback they receive, helping them identify areas for improvement and make data-driven decisions to enhance their services.",
+    image: policefeedback,
+    tags: [
+      "React Js",
+      "MongoDb",
+      "Node Js",
+      "Express Js",
+      "PlanetScale",
+      "Tailwind CSS",
+      "Next Js",
+      "Prisma",
+    ],
+    category: "web app",
+    github: "https://github.com/Chaitya-007/POLICE-FEEDBACK-SYSTEM",
+    webapp: "",
+  },
   {
     id: 9,
     title: "Gold-Diamond-Price-Prediction",
