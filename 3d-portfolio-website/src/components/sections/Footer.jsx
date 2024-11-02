@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { Bio } from "../../data/constants";
+import {
+  FacebookRounded,
+  Instagram,
+  LinkedIn,
+  Twitter,
+} from "@mui/icons-material";
 
 const FooterContainer = styled.div`
   width: 100%;
   padding: 2rem 0;
   display: flex;
   justify-content: center;
+  z-index: 10;
+  position: relative;
 `;
 const FooterWrapper = styled.div`
   width: 100%;
@@ -22,7 +31,7 @@ const Logo = styled.div`
   font-size: 20px;
   color: ${({ theme }) => theme.primary};
 `;
-const Nav = styled.div`
+const Nav = styled.ul`
   width: 100%;
   max-width: 800px;
   margin-top: 0.5rem;
@@ -30,13 +39,12 @@ const Nav = styled.div`
   flex-direction: row;
   gap: 2rem;
   justify-content: center;
-
   @media (max-width: 768px) {
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center
-  text-align: center;
-  font-size: 12px;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
   }
 `;
 const NavLink = styled.a`
@@ -51,19 +59,54 @@ const NavLink = styled.a`
     font-size: 1rem;
   }
 `;
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-top: 1rem;
+`;
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
+`;
+const Copyright = styled.p`
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: ${({ theme }) => theme.soft2};
+  text-align: center;
+`;
 
 const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Chaitya</Logo>
+        <Logo>Chaitanya Asole</Logo>
         <Nav>
-          <NavLink href="#About"> About</NavLink>
+          <NavLink href="#About">About</NavLink>
           <NavLink href="#Skills">Skills</NavLink>
           <NavLink href="#Experience">Experience</NavLink>
           <NavLink href="#Projects">Projects</NavLink>
           <NavLink href="#Education">Education</NavLink>
         </Nav>
+        <SocialMediaIcons>
+          <SocialMediaIcon href={Bio.facebook} target="display">
+            <FacebookRounded />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.twitter} target="display">
+            <Twitter />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.linkedin} target="display">
+            <LinkedIn />
+          </SocialMediaIcon>
+          <SocialMediaIcon href={Bio.insta} target="display">
+            <Instagram />
+          </SocialMediaIcon>
+        </SocialMediaIcons>
+        <Copyright>&copy; 2024 Chaitanya Asole. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );
