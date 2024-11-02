@@ -58,11 +58,6 @@ const Description = styled.div`
   }
 `;
 
-const Span = styled.div`
-  display: -webkit-box;
-  max-width: 100%;
-`;
-
 const Grade = styled.div`
   font-size: 14px;
   font-weight: 500;
@@ -70,6 +65,10 @@ const Grade = styled.div`
   @media only screen and (max-width: 768px) {
     font-size: 12px;
   }
+`;
+const Span = styled.div`
+  display: -webkit-box;
+  max-width: 100%;
 `;
 
 const EducationCard = ({ education }) => {
@@ -79,7 +78,7 @@ const EducationCard = ({ education }) => {
         <img
           width="100%"
           height="100%"
-          alt={education.company}
+          alt={education?.school}
           style={{ borderRadius: "50%", objectFit: "cover" }}
           src={education?.img}
         />
@@ -110,7 +109,7 @@ const EducationCard = ({ education }) => {
       </Top>
       <Grade>
         <b>Grade : </b>
-        {education.grade}
+        {education?.grade}
       </Grade>
       <Description>
         {education?.desc && <Span>{education.desc}</Span>}
