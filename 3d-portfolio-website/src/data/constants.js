@@ -58,6 +58,7 @@ import {
   vscode,
   postman,
   adobexd,
+  pccoe,
 } from "../assets";
 
 export const Bio = {
@@ -399,12 +400,11 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
-    school: "Kalinga Institute of Industrial Technology, Bhubaneswar",
-    date: "Oct 2021 - Sep 2025",
-    grade: "8.41 CGPA",
-    desc: "I am currently pursuing a Bachelor's degree in Computer Science and Engineering at Kalinga Institute of Industrial Technology, Bhubaneswar. I have completed 4 semesters and have a CGPA of 8.71. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of the Google Developers Student Club (GDSC) at KIIT, where I am learning and working on exciting projects with a team of talented developers.",
-    degree: "Bachelor of Technology - BTech, Computer Science and Engineering",
+    img: pccoe,
+    school: "Pimpri Chinchwad College of Engineering, Pune",
+    date: "Dec 2021 - Jun 2025",
+    grade: "8.61 CGPA",
+    desc: "I’m a final-year Computer Engineering student with a CGPA of 8.61 and a strong foundation in Data Structures and Algorithms, Object-Oriented Programming, Database Management, Operating Systems, and Computer Networks, developed through both coursework and hands-on projects. I’ve published a research paper, actively participated in hackathons, and earned recognition in intercollege competitions, all of which have strengthened my technical and problem-solving skills. As a member of the Computer Engineering Student Association, I’ve been part of several impactful tech initiatives, and I’ve also had the chance to perform at college gatherings, which helped me grow both technically and personally.",
   },
   {
     id: 1,
