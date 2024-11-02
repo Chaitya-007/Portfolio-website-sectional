@@ -15,6 +15,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   // background-color: blue;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;

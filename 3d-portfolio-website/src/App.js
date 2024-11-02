@@ -7,12 +7,12 @@ import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
 import StarCanvas from "./components/canvas/Stars";
+import Projects from "./components/sections/Projects";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.text_primary};
   width: 100%;
-  height: 90vh;
   overflow-x: hidden;
   position: relative;
 `;
@@ -46,7 +46,10 @@ function App() {
               <Skills />
               <Experience />
             </Wrapper>
-            <Education />
+            <Projects />
+            <Wrapper>
+              <Education />
+            </Wrapper>
           </div>
         </Body>
       </BrowserRouter>
