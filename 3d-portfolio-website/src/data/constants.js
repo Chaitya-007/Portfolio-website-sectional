@@ -7,7 +7,7 @@ export const Bio = {
     "Programmer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am a highly motivated and adaptable professional, driven by a strong curiosity to explore new ideas and find creative solutions to challenges. With a positive mindset and a collaborative spirit, I am eager to contribute to a team and embrace opportunities for mutual learning and growth.",
   github: "https://github.com/Chaitya-007",
   resume:
     "https://drive.google.com/file/d/1arfWZNfA1yGjQBQBFp9jygv4NCFxkERx/view?usp=sharing",
