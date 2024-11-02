@@ -306,6 +306,7 @@ const TextLoop = styled.div`
   display: flex;
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
+
   line-height: 68px;
 
   @media (max-width: 960px) {
@@ -322,6 +323,13 @@ const TextLoop = styled.div`
 const Span = styled.div`
   cursor: pointer;
   color: ${({ theme }) => theme.primary};
+  // color: #00ff00;
+
+  color: #00ffff; // Bright cyan/electric blue
+  //color: #0ff0fe; // Bright electric blue
+  // color: #00bfff; // Deep sky blue
+  // color: #4666ff; // Neon royal blue
+  //color: #0892d0; // Pure electric blue
 `;
 
 const SubTitle = styled.div`
