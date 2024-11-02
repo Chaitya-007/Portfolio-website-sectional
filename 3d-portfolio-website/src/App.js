@@ -6,6 +6,7 @@ import Hero from "./components/sections/Hero";
 import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
 import Education from "./components/sections/Education";
+import StarCanvas from "./components/canvas/Stars";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -38,12 +39,15 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Body>
-          <Hero />
-          <Wrapper>
-            <Skills />
-            <Experience />
-          </Wrapper>
-          <Education />
+          <StarCanvas />
+          <div>
+            <Hero />
+            <Wrapper>
+              <Skills />
+              <Experience />
+            </Wrapper>
+            <Education />
+          </div>
         </Body>
       </BrowserRouter>
     </ThemeProvider>
