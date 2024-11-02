@@ -29,6 +29,17 @@ import {
   materialui,
   flutter,
   express,
+  graphql,
+  python,
+  flask,
+  django,
+  mysql,
+  postgresql,
+  firebase,
+  aws,
+  googlecloud,
+  jenkins,
+  nginx,
 } from "../assets";
 
 export const Bio = {
@@ -104,40 +115,35 @@ export const skills = [
       },
       {
         name: "Graph Ql",
-        image: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg",
+        image: graphql,
       },
       {
         name: "Python",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        image: python,
       },
       {
         name: "Flask",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/1280px-Flask_logo.svg.png",
+        image: flask,
       },
       {
         name: "Django",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFFyY16N5NRhzoG24RqB7x8Ok2t8Bdgs-tuMsOBXS2Q&s",
+        image: django,
       },
       {
         name: "MySQL",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
+        image: mysql,
       },
       {
         name: "Postgresql",
-        image: "https://www.postgresql.org/media/img/about/press/elephant.png",
+        image: postgresql,
       },
       {
         name: "MongoDB",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
+        image: mongodb,
       },
       {
         name: "Firebase",
-        image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+        image: firebase,
       },
     ],
   },
@@ -146,27 +152,23 @@ export const skills = [
     skills: [
       {
         name: "AWS",
-        image:
-          "https://download.logo.wine/logo/Amazon_Web_Services/Amazon_Web_Services-Logo.wine.png",
+        image: aws,
       },
       {
         name: "Google Cloud",
-        image:
-          "https://static-00.iconduck.com/assets.00/google-cloud-platform-logo-icon-2048x1824-pg4wzspq.png",
+        image: googlecloud,
       },
       {
         name: "Docker",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+        image: docker,
       },
       {
         name: "Jenkins",
-        image:
-          "https://toppng.com/uploads/preview/jenkins-logo-11609365847mufysaivph.png",
+        image: jenkins,
       },
       {
         name: "Nginx",
-        image: "https://download.logo.wine/logo/Nginx/Nginx-Logo.wine.png",
+        image: nginx,
       },
       {
         name: "Grafana",

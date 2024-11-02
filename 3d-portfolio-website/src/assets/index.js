@@ -24,6 +24,17 @@ import bootstrap from "./tech/bootstrap.png";
 import materialui from "./tech/materialui.png";
 import flutter from "./tech/flutter.png";
 import express from "./tech/express.png";
+import graphql from "./tech/graphql.png";
+import python from "./tech/python.png";
+import flask from "./tech/flask.png";
+import django from "./tech/django.png";
+import mysql from "./tech/mysql.png";
+import postgresql from "./tech/postgresql.png";
+import firebase from "./tech/firebase.png";
+import aws from "./tech/aws.png";
+import googlecloud from "./tech/googlecloud.png";
+import jenkins from "./tech/jenkins.png";
+import nginx from "./tech/nginx.png";
 
 import threejs from "./tech/threejs.svg";
 
@@ -70,4 +81,15 @@ export {
   materialui,
   flutter,
   express,
+  graphql,
+  python,
+  flask,
+  django,
+  mysql,
+  postgresql,
+  firebase,
+  aws,
+  googlecloud,
+  jenkins,
+  nginx,
 };
