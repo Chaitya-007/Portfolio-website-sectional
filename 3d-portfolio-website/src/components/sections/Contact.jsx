@@ -1,10 +1,7 @@
 import React, { useRef, useState } from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
-import { education } from "../../data/constants";
-import EducationCard from "../cards/EducationCard";
-import EarthCanvas from "../canvas/Earth";
+import emailjs from "@emailjs/browser";
+import { useSnackbar } from "notistack";
 
 const Container = styled.div`
   display: flex;
@@ -49,7 +46,7 @@ const Desc = styled.div`
   }
 `;
 
-const ContactForm = styled.div`
+const ContactForm = styled.form`
   width: 95%;
   max-width: 600px;
   display: flex;
@@ -81,7 +78,6 @@ const ContactInput = styled.input`
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
-
 const ContactInputMessage = styled.textarea`
   flex: 1;
   background-color: transparent;
@@ -95,7 +91,6 @@ const ContactInputMessage = styled.textarea`
     border: 1px solid ${({ theme }) => theme.primary};
   }
 `;
-
 const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
@@ -108,13 +103,63 @@ const ContactButton = styled.input`
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
+  cursor: pointer;
 `;
 
 const Contact = () => {
-  const form = useRef();
+  const formRef = useRef();
+  const { enqueueSnackbar } = useSnackbar();
 
-  const handleSubmit = (e) => {};
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+    subject: "",
+  });
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({ ...form, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_oejskms",
+        "template_qzjnphr",
+        {
+          from_name: form.name,
+          to_name: "Jungle Mangal",
+          from_email: form.email,
+          to_email: "chaitanyaasole@gmail.com",
+          message: form.message,
+          subject: form.subject,
+        },
+        "suZjR-GLfE4gcYNh0"
+      )
+      .then(
+        () => {
+          // alert("Thank you. I will get back to you soon as possible!");
+          enqueueSnackbar("Message Sent Successfully", { variant: "success" });
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+            subject: "",
+          });
+        },
+        (error) => {
+          // console.log(error);
+          // alert("Something went wrong. Please try again later!");
+          enqueueSnackbar("An error happened. Please Check console", {
+            variant: "error",
+          });
+        }
+      );
+  };
   return (
     <Container id="Contact">
       <Wrapper>
@@ -124,14 +169,39 @@ const Contact = () => {
             marginBottom: "40px",
           }}
         >
-          Feel free to reach out to me for any questions or opportunities.
+          Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
-          <ContactInput placeholder="Your Name" name="from_name" />
-          <ContactInputMessage placeholder="Your Name" name="from_email" />
-          <ContactButton type="submit" value="Send"></ContactButton>
+          <ContactInput
+            type="email"
+            placeholder="Your Email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+          />
+          <ContactInput
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+          />
+          <ContactInput
+            type="text"
+            placeholder="Subject"
+            name="subject"
+            value={form.subject}
+            onChange={handleChange}
+          />
+          <ContactInputMessage
+            placeholder="Message"
+            name="message"
+            rows={4}
+            value={form.message}
+            onChange={handleChange}
+          />
+          <ContactButton type="submit" value="Send" />
         </ContactForm>
       </Wrapper>
     </Container>
