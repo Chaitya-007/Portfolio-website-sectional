@@ -3,6 +3,7 @@ import {
   backend,
   creator,
   web,
+  github,
   javascript,
   typescript,
   html,
@@ -40,6 +41,23 @@ import {
   googlecloud,
   jenkins,
   nginx,
+  grafana,
+  kubernetes,
+  promethus,
+  java,
+  kotlin,
+  jetpackcompose,
+  xml,
+  androidstudio,
+  tensorflow,
+  keras,
+  jupyter,
+  googlecolab,
+  sklearn,
+  netlify,
+  vscode,
+  postman,
+  adobexd,
 } from "../assets";
 
 export const Bio = {
@@ -172,18 +190,15 @@ export const skills = [
       },
       {
         name: "Grafana",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Grafana_logo.svg/1200px-Grafana_logo.svg.png",
+        image: grafana,
       },
       {
         name: "Kubernetes",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/0/00/Kubernetes_%28container_engine%29.png",
+        image: kubernetes,
       },
       {
         name: "Prometheus",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Prometheus_software_logo.svg/1200px-Prometheus_software_logo.svg.png",
+        image: promethus,
       },
     ],
   },
@@ -192,28 +207,23 @@ export const skills = [
     skills: [
       {
         name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
+        image: java,
       },
       {
         name: "Kotlin",
-        image:
-          "https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg",
+        image: kotlin,
       },
       {
         name: "Jetpack Compose",
-        image:
-          "https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png",
+        image: jetpackcompose,
       },
       {
         name: "XML",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
+        image: xml,
       },
       {
         name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+        image: androidstudio,
       },
     ],
   },
@@ -222,33 +232,27 @@ export const skills = [
     skills: [
       {
         name: "Python",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
+        image: python,
       },
       {
         name: "Tenserflow",
-        image:
-          "https://static-00.iconduck.com/assets.00/tensorflow-icon-1911x2048-1m2s54vn.png",
+        image: tensorflow,
       },
       {
         name: "Keras",
-        image:
-          "https://miro.medium.com/v2/resize:fit:600/1*DKu_54iqz6C-p6ndo7rO3g.png",
+        image: keras,
       },
       {
         name: "Jupyter",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/1767px-Jupyter_logo.svg.png",
+        image: jupyter,
       },
       {
         name: "Google Colab",
-        image:
-          "https://assets.stickpng.com/images/63c2e4c9c4baad4ce22bf9ef.png",
+        image: googlecolab,
       },
       {
         name: "Sk Learn Kit",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/2560px-Scikit_learn_logo_small.svg.png",
+        image: sklearn,
       },
     ],
   },
@@ -257,38 +261,31 @@ export const skills = [
     skills: [
       {
         name: "Git",
-        image:
-          "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
+        image: git,
       },
       {
         name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+        image: github,
       },
       {
         name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+        image: netlify,
       },
       {
         name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+        image: vscode,
       },
       {
         name: "Postman",
-        image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+        image: postman,
       },
       {
         name: "Adobe XD",
-        image:
-          "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+        image: adobexd,
       },
       {
         name: "Figma",
-        image:
-          "https://s3-alpha.figma.com/hub/file/1481185752/fa4cd070-6a79-4e1b-b079-8b9b76408595-cover.png",
+        image: figma,
       },
     ],
   },

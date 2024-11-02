@@ -35,6 +35,23 @@ import aws from "./tech/aws.png";
 import googlecloud from "./tech/googlecloud.png";
 import jenkins from "./tech/jenkins.png";
 import nginx from "./tech/nginx.png";
+import grafana from "./tech/grafana.png";
+import kubernetes from "./tech/kubernetes.png";
+import promethus from "./tech/promethus.png";
+import java from "./tech/java.png";
+import kotlin from "./tech/kotlin.png";
+import jetpackcompose from "./tech/jetpackcompose.png";
+import xml from "./tech/xml.png";
+import androidstudio from "./tech/androidstudio.png";
+import tensorflow from "./tech/tensorflow.png";
+import keras from "./tech/keras.png";
+import jupyter from "./tech/jupyter.png";
+import googlecolab from "./tech/googlecolab.png";
+import sklearn from "./tech/sklearn.png";
+import netlify from "./tech/netlify.png";
+import vscode from "./tech/vscode.png";
+import postman from "./tech/postman.png";
+import adobexd from "./tech/adobexd.png";
 
 import threejs from "./tech/threejs.svg";
 
@@ -92,4 +109,21 @@ export {
   googlecloud,
   jenkins,
   nginx,
+  grafana,
+  kubernetes,
+  promethus,
+  java,
+  kotlin,
+  jetpackcompose,
+  xml,
+  androidstudio,
+  tensorflow,
+  keras,
+  jupyter,
+  googlecolab,
+  sklearn,
+  netlify,
+  vscode,
+  postman,
+  adobexd,
 };
