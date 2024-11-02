@@ -1,11 +1,6 @@
 export const Bio = {
   name: "Chaitanya Asole",
-  roles: [
-    "Full Stack Developer",
-    "Android Developer",
-    "UI/UX Designer",
-    "Programmer",
-  ],
+  roles: ["Full Stack Developer", "Competitive Programmar", "App Developer"],
   description:
     "I am a highly motivated and adaptable professional, driven by a strong curiosity to explore new ideas and find creative solutions to challenges. With a positive mindset and a collaborative spirit, I am eager to contribute to a team and embrace opportunities for mutual learning and growth.",
   github: "https://github.com/Chaitya-007",
