@@ -73,6 +73,7 @@ export const Bio = {
     "I am a highly motivated and adaptable professional, driven by a strong curiosity to explore new ideas and find creative solutions to challenges. With a positive mindset and a collaborative spirit, I am eager to contribute to a team and embrace opportunities for mutual learning and growth.",
   github: "https://github.com/Chaitya-007",
   resume:
+    // "https://drive.google.com/file/d/1arfWZNfA1yGjQBQBFp9jygv4NCFxkERx/view?usp=sharing",
     "https://drive.google.com/file/d/1arfWZNfA1yGjQBQBFp9jygv4NCFxkERx/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/chaitanya-asole/",
   twitter: "",
